@@ -141,11 +141,16 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # ]
 
 # CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    "https://ai-chatbot-react-django.vercel.app",
-]
 
-CORS_ALLOW_HEADERS = [
-    "content-type",
-    "authorization",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://ai-chatbot-react-django.vercel.app",
+# ]
+
+# CORS_ALLOW_HEADERS = [
+#     "content-type",
+#     "authorization",
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_CREDENTIALS = True
