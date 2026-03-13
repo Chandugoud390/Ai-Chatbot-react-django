@@ -131,13 +131,13 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # React development server
-    "http://localhost:8080",  # Vue development server
-    "http://127.0.0.1:3000",  # Alternative localhost format
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "http://localhost:5175",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",  # React development server
+#     "http://localhost:8080",  # Vue development server
+#     "http://127.0.0.1:3000",  # Alternative localhost format
+#     "http://localhost:5173",
+#     "http://localhost:5174",
+#     "http://localhost:5175",
+# ]
 
 CORS_ALLOW_ALL_ORIGINS = True
