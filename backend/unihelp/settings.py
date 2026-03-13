@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
     'uniapp',
 ]
 
@@ -146,13 +146,9 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 #     "https://ai-chatbot-react-django.vercel.app",
 # ]
 
-# CORS_ALLOW_HEADERS = [
-#     "content-type",
-#     "authorization",
-# ]
+CORS_ALLOW_HEADERS = ["*"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = False
