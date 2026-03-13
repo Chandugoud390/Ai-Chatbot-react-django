@@ -141,3 +141,8 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_HEADERS = [
+    "content-type",
+    "authorization",
+]
