@@ -152,7 +152,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
-TEMPLATES[0['DIRS']] = [os.path.join(BASE_DIR, 'dist')]
+TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'dist')]
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dist/assets'),
