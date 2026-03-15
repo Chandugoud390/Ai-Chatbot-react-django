@@ -157,3 +157,6 @@ TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'dist')]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dist/assets'),
 ]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
