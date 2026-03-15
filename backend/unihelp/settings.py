@@ -65,7 +65,7 @@ ROOT_URLCONF = 'unihelp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,8 +151,6 @@ CORS_ALLOW_HEADERS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
-
-TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'dist')]
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'dist/assets'),
